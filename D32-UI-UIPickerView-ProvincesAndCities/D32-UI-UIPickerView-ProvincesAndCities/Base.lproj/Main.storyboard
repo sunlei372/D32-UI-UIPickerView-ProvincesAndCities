@@ -19,6 +19,7 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4K-Ck-eWs">
                                 <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                                <color key="backgroundColor" red="0.43235028419999999" green="0.52356305000000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -29,6 +30,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pickeView" destination="R4K-Ck-eWs" id="vYu-ix-rQV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

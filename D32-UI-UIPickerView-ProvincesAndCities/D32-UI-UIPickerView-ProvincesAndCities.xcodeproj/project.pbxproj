@@ -13,6 +13,8 @@
 		7133F44D1CAD4A4B00F4ED6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7133F44B1CAD4A4B00F4ED6E /* Main.storyboard */; };
 		7133F44F1CAD4A4B00F4ED6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7133F44E1CAD4A4B00F4ED6E /* Assets.xcassets */; };
 		7133F4521CAD4A4B00F4ED6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7133F4501CAD4A4B00F4ED6E /* LaunchScreen.storyboard */; };
+		7133F45A1CAD4D0100F4ED6E /* 02cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7133F4591CAD4D0100F4ED6E /* 02cities.plist */; };
+		7133F45D1CAD4F5500F4ED6E /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7133F45C1CAD4F5500F4ED6E /* ProvinceModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		7133F44E1CAD4A4B00F4ED6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7133F4511CAD4A4B00F4ED6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7133F4531CAD4A4B00F4ED6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7133F4591CAD4D0100F4ED6E /* 02cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 02cities.plist; sourceTree = "<group>"; };
+		7133F45B1CAD4F5500F4ED6E /* ProvinceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceModel.h; sourceTree = "<group>"; };
+		7133F45C1CAD4F5500F4ED6E /* ProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,10 @@
 		7133F4411CAD4A4B00F4ED6E /* D32-UI-UIPickerView-ProvincesAndCities */ = {
 			isa = PBXGroup;
 			children = (
-				7133F4451CAD4A4B00F4ED6E /* AppDelegate.h */,
-				7133F4461CAD4A4B00F4ED6E /* AppDelegate.m */,
-				7133F4481CAD4A4B00F4ED6E /* ViewController.h */,
-				7133F4491CAD4A4B00F4ED6E /* ViewController.m */,
-				7133F44B1CAD4A4B00F4ED6E /* Main.storyboard */,
-				7133F44E1CAD4A4B00F4ED6E /* Assets.xcassets */,
-				7133F4501CAD4A4B00F4ED6E /* LaunchScreen.storyboard */,
-				7133F4531CAD4A4B00F4ED6E /* Info.plist */,
+				7133F4601CAD4F8600F4ED6E /* Model */,
+				7133F45F1CAD4F7E00F4ED6E /* View */,
+				7133F45E1CAD4F6200F4ED6E /* Controller */,
+				7133F4611CAD4F9600F4ED6E /* Others */,
 				7133F4421CAD4A4B00F4ED6E /* Supporting Files */,
 			);
 			path = "D32-UI-UIPickerView-ProvincesAndCities";
@@ -74,9 +75,48 @@
 		7133F4421CAD4A4B00F4ED6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7133F4591CAD4D0100F4ED6E /* 02cities.plist */,
 				7133F4431CAD4A4B00F4ED6E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7133F45E1CAD4F6200F4ED6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7133F4481CAD4A4B00F4ED6E /* ViewController.h */,
+				7133F4491CAD4A4B00F4ED6E /* ViewController.m */,
+				7133F44B1CAD4A4B00F4ED6E /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7133F45F1CAD4F7E00F4ED6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7133F4601CAD4F8600F4ED6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7133F45B1CAD4F5500F4ED6E /* ProvinceModel.h */,
+				7133F45C1CAD4F5500F4ED6E /* ProvinceModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7133F4611CAD4F9600F4ED6E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7133F4501CAD4A4B00F4ED6E /* LaunchScreen.storyboard */,
+				7133F4531CAD4A4B00F4ED6E /* Info.plist */,
+				7133F4451CAD4A4B00F4ED6E /* AppDelegate.h */,
+				7133F4461CAD4A4B00F4ED6E /* AppDelegate.m */,
+				7133F44E1CAD4A4B00F4ED6E /* Assets.xcassets */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +179,7 @@
 				7133F4521CAD4A4B00F4ED6E /* LaunchScreen.storyboard in Resources */,
 				7133F44F1CAD4A4B00F4ED6E /* Assets.xcassets in Resources */,
 				7133F44D1CAD4A4B00F4ED6E /* Main.storyboard in Resources */,
+				7133F45A1CAD4D0100F4ED6E /* 02cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7133F44A1CAD4A4B00F4ED6E /* ViewController.m in Sources */,
+				7133F45D1CAD4F5500F4ED6E /* ProvinceModel.m in Sources */,
 				7133F4471CAD4A4B00F4ED6E /* AppDelegate.m in Sources */,
 				7133F4441CAD4A4B00F4ED6E /* main.m in Sources */,
 			);
