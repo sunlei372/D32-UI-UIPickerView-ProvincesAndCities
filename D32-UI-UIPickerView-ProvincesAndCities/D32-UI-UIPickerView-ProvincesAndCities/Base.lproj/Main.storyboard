@@ -16,7 +16,17 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4K-Ck-eWs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R4K-Ck-eWs" secondAttribute="trailing" id="Cto-5P-eli"/>
+                            <constraint firstItem="R4K-Ck-eWs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eud-uY-I4D"/>
+                            <constraint firstItem="R4K-Ck-eWs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ldS-WT-gnC"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
